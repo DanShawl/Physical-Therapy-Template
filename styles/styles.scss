@@ -13,6 +13,7 @@ $text-color: #707070;
 $text-color-light: #a6a6a6;
 $body-color: #fbfefd;
 $container-color: #ffffff;
+$bg-primary: #c1deba;
 
 $body-font: 'Poppins', sans-serif;
 $large-font-size: 2.25rem;
@@ -67,7 +68,8 @@ html {
 }
 
 body {
-  margin: $header-height 0 0 0;
+  // margin: $header-height 0 0 0;
+  margin: 0 0 0 0;
   font-family: $body-font;
   font-size: $normal-font-size;
   background-color: $body-color;
@@ -162,12 +164,12 @@ img {
   width: 100%;
   height: $header-height;
   padding: 0 1rem;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
   z-index: $z-fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 // .header-logo,
@@ -192,7 +194,6 @@ img {
     position: fixed;
     top: 0;
     left: -100%;
-    // background-color: $primary-color;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
@@ -272,6 +273,13 @@ img {
 }
 
 /* ----------------------- Home ------------------------ */
+
+.home {
+  background-color: $bg-primary;
+  height: 100vh;
+  // margin-top: $header-height;
+  padding-top: $header-height;
+}
 .home-container {
   height: calc(100vh-$header-height);
   align-content: center;
@@ -279,8 +287,13 @@ img {
 .home-title {
   margin-top: 1rem;
   font-size: $large-font-size;
-  color: $primary-color;
+  color: $title-color;
   margin-bottom: $margin-1;
+  span {
+    // color: #39393985;
+    // color: #fff;
+    color: #78aa6b;
+  }
 }
 
 .home-subtitle {
@@ -290,10 +303,10 @@ img {
   font-weight: $font-medium;
 }
 
-.home-img {
-  margin-top: 2rem;
-  border-radius: 0.75rem;
-}
+// .home-img {
+//   margin-top: 2rem;
+//   border-radius: 0.75rem;
+// }
 
 .home-image {
   margin-top: 1.5rem;
@@ -305,11 +318,17 @@ img {
   background-position: center center;
 }
 
+.home-btn {
+  margin-bottom: 3rem;
+}
 /* ----------------------- Buttons ------------------------ */
 .button {
   display: inline-block;
-  background-color: $primary-color;
-  color: #fff;
+  // background-color: #fff;
+  background-color: #8ebd82;
+  // background-color: #78aa6b;
+  color: $title-color;
+  font-weight: 600;
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
   transition: 0.3s;
@@ -317,6 +336,7 @@ img {
 
 .button:hover {
   background-color: $primary-color-alt;
+  // background-color: #fff;
 }
 
 /* ----------------------- Media Queries ------------------------ */
