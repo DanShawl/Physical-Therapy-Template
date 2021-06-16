@@ -19,7 +19,7 @@ body {
   font-size: 0.938rem;
   background-color: #fbfefd;
   color: #707070;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 h1,
@@ -77,6 +77,38 @@ img {
   margin-right: 1.5rem;
 }
 
+/* --------------------- Scroll to Top ---------------------- */
+.scroll {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.3rem;
+  background: rgba(6, 156, 84, 0.5);
+  border-radius: 0.4rem;
+  z-index: 10;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.scroll:hover {
+  background-color: #048654;
+}
+
+.scroll-icon {
+  font-size: 1.8rem;
+  color: #fbfefd;
+}
+
+/* Show scroll top */
 /* --------------------- Header ---------------------- */
 .header {
   position: fixed;
@@ -110,7 +142,6 @@ img {
   cursor: pointer;
 }
 
-/* --------------------- Header ---------------------- */
 @media screen and (max-width: 768px) {
   .nav {
     position: fixed;
@@ -202,14 +233,65 @@ img {
   font-size: 1.3rem;
 }
 
-/* ----------------------- Show Menu ------------------------ */
+/*  Show Menu  */
 .show {
   left: 0;
 }
 
-/* ----------------------- Active Link ------------------------ */
+/*  Active Link  */
 .active {
   color: #393939;
+}
+
+/* ----------------------- Home ------------------------ */
+.home-container {
+  height: calc(100vh-$header-height);
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.home-title {
+  margin-top: 1rem;
+  font-size: 2.25rem;
+  color: #069c54;
+  margin-bottom: 0.5rem;
+}
+
+.home-subtitle {
+  font-size: 1rem;
+  color: #393939;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.home-img {
+  margin-top: 2rem;
+  border-radius: 0.75rem;
+}
+
+.home-image {
+  margin-top: 1.5rem;
+  background-image: url(/images/Grandfather.jpg);
+  height: 45vh;
+  width: auto;
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* ----------------------- Buttons ------------------------ */
+.button {
+  display: inline-block;
+  background-color: #069c54;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #048654;
 }
 
 /* ----------------------- Media Queries ------------------------ */
