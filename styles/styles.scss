@@ -8,7 +8,8 @@ $header-height: 3rem;
 
 $primary-color: #069c54;
 $primary-color-alt: #048654;
-$title-color: #393939;
+// $title-color: #393939;
+$title-color: #231f20;
 $text-color: #707070;
 $text-color-light: #a6a6a6;
 $body-color: #fbfefd;
@@ -100,7 +101,7 @@ img {
 }
 
 /* ---------------------------- Classes ----------------------------*/
-.section {
+section {
   padding: 4rem 0 2rem;
 }
 
@@ -139,7 +140,8 @@ img {
   justify-content: center;
   align-items: center;
   padding: 0.3rem;
-  background: rgba(6, 156, 84, 0.5);
+  // background: rgba(6, 156, 84, 0.5);
+  background: #78aa6b2d;
   border-radius: 0.4rem;
   z-index: $z-tooltip;
   transition: 0.4s;
@@ -236,6 +238,9 @@ img {
 
 .nav-logo {
   margin-left: -1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-name {
@@ -279,8 +284,12 @@ img {
   height: 100vh;
   // margin-top: $header-height;
   padding-top: $header-height;
+  h6 {
+    margin-bottom: -0.75rem;
+  }
 }
 .home-container {
+  margin-top: 1.5rem;
   height: calc(100vh-$header-height);
   align-content: center;
 }
@@ -311,7 +320,7 @@ img {
 .home-image {
   margin-top: 1.5rem;
   background-image: url(/images/Grandfather.jpg);
-  height: 45vh;
+  height: 50vh;
   width: auto;
   border-radius: 1rem;
   background-size: cover;
@@ -319,7 +328,18 @@ img {
 }
 
 .home-btn {
-  margin-bottom: 3rem;
+  position: fixed;
+  bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // left: 1.5rem;
+  // right: 1.5rem;
+  text-align: center;
+  width: 90%;
+  // margin: 0 auto 0;
+  // margin-bottom: 3rem;
+  z-index: $z-tooltip;
 }
 /* ----------------------- Buttons ------------------------ */
 .button {

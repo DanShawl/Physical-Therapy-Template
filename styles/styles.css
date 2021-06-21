@@ -45,7 +45,7 @@ img {
 }
 
 /* ---------------------------- Classes ----------------------------*/
-.section {
+section {
   padding: 4rem 0 2rem;
 }
 
@@ -56,7 +56,7 @@ img {
 
 .section-title {
   font-size: 1.5rem;
-  color: #393939;
+  color: #231f20;
   margin-bottom: 1.5rem;
 }
 
@@ -92,7 +92,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding: 0.3rem;
-  background: rgba(6, 156, 84, 0.5);
+  background: #78aa6b2d;
   border-radius: 0.4rem;
   z-index: 10;
   -webkit-transition: 0.4s;
@@ -135,7 +135,7 @@ img {
 }
 
 .header-toggle {
-  color: #393939;
+  color: #231f20;
   font-size: 1.7rem;
   cursor: pointer;
 }
@@ -202,6 +202,15 @@ img {
 
 .nav-logo {
   margin-left: -1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav-name {
@@ -219,7 +228,7 @@ img {
 }
 
 .nav-link:hover {
-  color: #393939;
+  color: #231f20;
 }
 
 .nav-socials {
@@ -238,7 +247,7 @@ img {
 
 /*  Active Link  */
 .active {
-  color: #393939;
+  color: #231f20;
 }
 
 /* ----------------------- Home ------------------------ */
@@ -248,7 +257,12 @@ img {
   padding-top: 3rem;
 }
 
+.home h6 {
+  margin-bottom: -0.75rem;
+}
+
 .home-container {
+  margin-top: 1.5rem;
   height: calc(100vh-$header-height);
   -ms-flex-line-pack: center;
       align-content: center;
@@ -257,7 +271,7 @@ img {
 .home-title {
   margin-top: 1rem;
   font-size: 2.25rem;
-  color: #393939;
+  color: #231f20;
   margin-bottom: 0.5rem;
 }
 
@@ -267,7 +281,7 @@ img {
 
 .home-subtitle {
   font-size: 1rem;
-  color: #393939;
+  color: #231f20;
   margin-bottom: 2rem;
   font-weight: 500;
 }
@@ -275,7 +289,7 @@ img {
 .home-image {
   margin-top: 1.5rem;
   background-image: url(/images/Grandfather.jpg);
-  height: 45vh;
+  height: 50vh;
   width: auto;
   border-radius: 1rem;
   background-size: cover;
@@ -283,14 +297,27 @@ img {
 }
 
 .home-btn {
-  margin-bottom: 3rem;
+  position: fixed;
+  bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 90%;
+  z-index: 10;
 }
 
 /* ----------------------- Buttons ------------------------ */
 .button {
   display: inline-block;
   background-color: #8ebd82;
-  color: #393939;
+  color: #231f20;
   font-weight: 600;
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
