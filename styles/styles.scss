@@ -291,7 +291,11 @@ section {
 .home-container {
   margin-top: 1.5rem;
   height: calc(100vh-$header-height);
+  // display: flex;
+  // flex-direction: column;
   align-content: center;
+  // align-items: center;
+  // justify-content: center;
 }
 .home-title {
   margin-top: 1rem;
@@ -320,7 +324,7 @@ section {
 .home-image {
   margin-top: 1.5rem;
   background-image: url(/images/Grandfather.jpg);
-  height: 50vh;
+  height: 45vh;
   width: auto;
   border-radius: 1rem;
   background-size: cover;
@@ -330,17 +334,26 @@ section {
 .home-btn {
   position: fixed;
   bottom: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // left: 1.5rem;
-  // right: 1.5rem;
+  left: calc(-50vw + 50%);
+  right: calc(-50vw + 50%);
+  margin-left: auto;
+  margin-right: auto;
+
   text-align: center;
   width: 90%;
-  // margin: 0 auto 0;
-  // margin-bottom: 3rem;
   z-index: $z-tooltip;
 }
+
+/* ----------------------- Social Proof ------------------------ */
+.social-proof-data {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: -1rem;
+  h2 {
+    color: $title-color;
+  }
+}
+
 /* ----------------------- Buttons ------------------------ */
 .button {
   display: inline-block;
