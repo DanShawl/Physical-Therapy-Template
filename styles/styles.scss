@@ -10,7 +10,8 @@ $primary-color: #069c54;
 $primary-color-alt: #048654;
 // $title-color: #393939;
 $title-color: #231f20;
-$text-color: #707070;
+$text-color: #484848;
+// $text-color: #3b3b3b;
 $text-color-light: #a6a6a6;
 $body-color: #fbfefd;
 $container-color: #ffffff;
@@ -81,11 +82,18 @@ body {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p,
 ul {
   margin: 0;
 }
-
+h2 {
+  color: $title-color;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
 ul {
   padding: 0;
   list-style: none;
@@ -102,7 +110,7 @@ img {
 
 /* ---------------------------- Classes ----------------------------*/
 section {
-  padding: 4rem 0 2rem;
+  padding: 4rem 0 4rem;
 }
 
 .section-title,
@@ -131,6 +139,11 @@ section {
   margin-right: 1.5rem;
 }
 
+.margin-width {
+  max-width: 1024px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
 /* --------------------- Scroll to Top ---------------------- */
 .scroll {
   position: fixed;
@@ -281,6 +294,7 @@ section {
 
 .home {
   background-color: $bg-primary;
+  // background-color: $body-color;
   height: 100vh;
   // margin-top: $header-height;
   padding-top: $header-height;
@@ -292,12 +306,23 @@ section {
   margin-top: 1.5rem;
   height: calc(100vh-$header-height);
   // display: flex;
-  // flex-direction: column;
-  align-content: center;
+  // flex-direction: row-reverse;
+  // align-content: center;
   // align-items: center;
   // justify-content: center;
 }
+
+.home-data {
+  margin-top: 6rem;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   justify-content: space-between;
+  h6 {
+  }
+}
 .home-title {
+  line-height: 1.2;
   margin-top: 1rem;
   font-size: $large-font-size;
   color: $title-color;
@@ -308,10 +333,9 @@ section {
     color: #78aa6b;
   }
 }
-
 .home-subtitle {
   font-size: $h3-font-size;
-  color: $title-color;
+  color: $text-color;
   margin-bottom: $margin-4;
   font-weight: $font-medium;
 }
@@ -324,8 +348,9 @@ section {
 .home-image {
   margin-top: 1.5rem;
   background-image: url(/images/Grandfather.jpg);
-  height: 45vh;
-  width: auto;
+  height: 40vh;
+  // width: auto;
+  width: 100%;
   border-radius: 1rem;
   background-size: cover;
   background-position: center center;
@@ -342,16 +367,31 @@ section {
   text-align: center;
   width: 90%;
   z-index: $z-tooltip;
+
+  // color: #fff;
 }
 
 /* ----------------------- Social Proof ------------------------ */
 .social-proof-data {
+  margin-top: -1rem;
+}
+
+/* ----------------------- Treatments ------------------------ */
+.treatments {
+  border-top: 1px solid rgba(167, 167, 167, 0.253);
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  margin-top: -1rem;
-  h2 {
-    color: $title-color;
-  }
+}
+// .treatment-group {
+//   margin-top: 2.5rem;
+// }
+.treatment-card {
+  margin-bottom: 2rem;
+}
+.treatment-title {
+  margin: 0.5rem 0 0.4rem;
+  color: $title-color;
+  font-weight: 700;
 }
 
 /* ----------------------- Buttons ------------------------ */
@@ -360,7 +400,8 @@ section {
   // background-color: #fff;
   background-color: #8ebd82;
   // background-color: #78aa6b;
-  color: $title-color;
+  color: $text-color;
+  // color: #fff;
   font-weight: 600;
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
@@ -454,4 +495,52 @@ section {
     margin-left: 0.5em;
     font-size: 1rem;
   }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 12px;
+  }
+  body {
+    // font-size: 10px;
+  }
+}
+
+.grid-test {
+  height: auto;
+  position: absolute;
+  display: grid;
+  // grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  //   grid-template-columns: repeat(12, 1fr);
+  //   grid-template-rows: repeat(12, 1fr);
+  grid-template-areas:
+    '.. .. .. g3 g3 g3 g3 .. g1 g1 g1 ..'
+    '.. .. .. .. .. .. .. .. .. .. .. ..'
+    '.. .. .. g2 g2 g2 g2 g2 g2 .. .. ..'
+    '.. .. .. .. .. .. .. .. .. .. .. ..';
+}
+
+g {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.g1 {
+  grid-area: g1;
+  width: 100px;
+}
+.g2 {
+  grid-area: g2;
+  // width: 100px;
+}
+.g3 {
+  grid-area: g3;
+  // width: 200px;
 }

@@ -18,16 +18,25 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 0.938rem;
   background-color: #fbfefd;
-  color: #707070;
+  color: #484848;
   line-height: 1.4;
 }
 
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p,
 ul {
   margin: 0;
+}
+
+h2 {
+  color: #231f20;
+  font-weight: 600;
+  margin-bottom: 2rem;
 }
 
 ul {
@@ -46,7 +55,7 @@ img {
 
 /* ---------------------------- Classes ----------------------------*/
 section {
-  padding: 4rem 0 2rem;
+  padding: 4rem 0 4rem;
 }
 
 .section-title,
@@ -73,6 +82,12 @@ section {
   display: grid;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.margin-width {
+  max-width: 1024px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -224,7 +239,7 @@ section {
 }
 
 .nav-link {
-  color: #707070;
+  color: #484848;
 }
 
 .nav-link:hover {
@@ -264,11 +279,14 @@ section {
 .home-container {
   margin-top: 1.5rem;
   height: calc(100vh-$header-height);
-  -ms-flex-line-pack: center;
-      align-content: center;
+}
+
+.home-data {
+  margin-top: 6rem;
 }
 
 .home-title {
+  line-height: 1.2;
   margin-top: 1rem;
   font-size: 2.25rem;
   color: #231f20;
@@ -281,7 +299,7 @@ section {
 
 .home-subtitle {
   font-size: 1rem;
-  color: #231f20;
+  color: #484848;
   margin-bottom: 2rem;
   font-weight: 500;
 }
@@ -289,8 +307,8 @@ section {
 .home-image {
   margin-top: 1.5rem;
   background-image: url(/images/Grandfather.jpg);
-  height: 45vh;
-  width: auto;
+  height: 40vh;
+  width: 100%;
   border-radius: 1rem;
   background-size: cover;
   background-position: center center;
@@ -310,20 +328,31 @@ section {
 
 /* ----------------------- Social Proof ------------------------ */
 .social-proof-data {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
   margin-top: -1rem;
 }
 
-.social-proof-data h2 {
+/* ----------------------- Treatments ------------------------ */
+.treatments {
+  border-top: 1px solid rgba(167, 167, 167, 0.253);
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.treatment-card {
+  margin-bottom: 2rem;
+}
+
+.treatment-title {
+  margin: 0.5rem 0 0.4rem;
   color: #231f20;
+  font-weight: 700;
 }
 
 /* ----------------------- Buttons ------------------------ */
 .button {
   display: inline-block;
   background-color: #8ebd82;
-  color: #231f20;
+  color: #484848;
   font-weight: 600;
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
@@ -402,7 +431,7 @@ section {
     margin: 0 1.2rem;
   }
   .nav-link {
-    color: #707070;
+    color: #484848;
   }
   .nav-link:hover {
     color: #069c54;
@@ -424,5 +453,61 @@ section {
     margin-left: 0.5em;
     font-size: 1rem;
   }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+.grid-test {
+  height: auto;
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 1fr))[12];
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+      grid-template-areas: '.. .. .. g3 g3 g3 g3 .. g1 g1 g1 ..' '.. .. .. .. .. .. .. .. .. .. .. ..' '.. .. .. g2 g2 g2 g2 g2 g2 .. .. ..' '.. .. .. .. .. .. .. .. .. .. .. ..';
+}
+
+g {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.g1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 3;
+  grid-area: g1;
+  width: 100px;
+}
+
+.g2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 6;
+  grid-area: g2;
+}
+
+.g3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 4;
+  grid-area: g3;
 }
 /*# sourceMappingURL=styles.css.map */
