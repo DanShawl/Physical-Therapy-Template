@@ -42,4 +42,52 @@ function linkAction() {
   this.class.add('active');
 }
 
-navLink.forEach((n) => n.addEventListener('click', linkAction));
+// navLink.forEach((n) => n.addEventListener('click', linkAction));
+
+/* ---------------- Add CTA on Scroll ------------------- */
+
+const header = document.querySelector('header');
+const callToday = document.querySelector('.home-btn');
+const homeCTA = document.querySelector('.home-cta');
+const CTAoptions = {};
+
+const observerCTA = new IntersectionObserver(function (entries, observerCTA) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      callToday.classList.remove('hidden');
+    } else {
+      callToday.classList.add('hidden');
+    }
+  });
+}, CTAoptions);
+
+observerCTA.observe(homeCTA);
+
+/* ---------------- Scroll Sections Active Link ------------------- */
+
+// const sections = document.querySelectorAll('section[id]');
+// window.addEventListener('scroll', scrollActive);
+
+// function scrollActive() {
+//   const scrollY = window.pageYOffset;
+//   sections.forEach((current) => {
+//     const sectionHeight = current.offsetHeight;
+//     const sectionTop = current.offsetTop - 50;
+//     sectionId = current.getAttribute('id');
+
+//     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+//       document
+//         .querySelector('.nav-menu a[href"=' + sectionID + ']')
+//         .classList.add('active');
+//     } else {
+//       document
+//         .querySelector('.nav-menu a[href"=' + sectionID + ']')
+//         .classList.remove('active');
+//     }
+//   });
+// }
+
+// function showBtn() {
+//   const showBtn = document.getElementById('cta-btn')
+//   if(this.scrollY)
+// }

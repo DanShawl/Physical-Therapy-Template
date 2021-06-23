@@ -259,13 +259,14 @@ section {
 /* --------------------- Header ---------------------- */
 
 .header {
-  position: fixed;
+  // position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: $header-height;
   padding: 0 1rem;
-  background-color: rgba(255, 255, 255, 0);
+  // background-color: rgba(255, 255, 255, 0);
+  background-color: $bg-primary;
   z-index: $z-fixed;
   display: flex;
   justify-content: space-between;
@@ -381,7 +382,7 @@ section {
 .home {
   background-color: $bg-primary;
   // background-color: $body-color;
-  height: 100vh;
+  // height: 100vh;
   // margin-top: $header-height;
   padding-top: $header-height;
   h6 {
@@ -399,7 +400,7 @@ section {
 }
 
 .home-data {
-  margin-top: 5rem;
+  margin-top: 3rem;
   //   display: flex;
   //   flex-direction: column;
   //   align-items: center;
@@ -430,7 +431,7 @@ section {
 }
 .home-grid {
   // height: 50vh;
-  margin-top: 4rem;
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(16, minmax(0, 1fr));
   grid-template-rows: auto;
@@ -493,6 +494,7 @@ section {
   background-color: #b7ddad;
   // color: #fff;
 }
+
 /* ----------------------- Services ------------------------ */
 .services-container {
   position: relative;
@@ -793,3 +795,8 @@ section {
 //   border-radius: 0.3rem;
 //   align-self: flex-start;
 // }
+
+.hidden {
+  display: none;
+  // background: khaki;
+}
