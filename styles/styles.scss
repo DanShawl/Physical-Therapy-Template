@@ -586,6 +586,38 @@ section {
   font-size: 10px;
   margin-bottom: 1.5rem;
 }
+
+/* ----------------------- Virtual Sessions ------------------------ */
+.virtual-sessions {
+  background: linear-gradient(90deg, $title-color, #ffffff00 100%),
+    url(/images/virtualtraining.jpg) no-repeat center center / cover;
+  // background-image: url(/images/virtualtraining.jpg);
+  // background-size: cover;
+  height: 350px;
+  .virtual-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  h2 {
+    color: $body-color;
+    margin-bottom: 1rem;
+  }
+  p {
+    color: $body-color;
+  }
+}
+// .virtual-btn {
+//   width: inherit;
+//   text-align: center;
+//   color: $body-color;
+//   background: #b7ddad;
+// }
+
 /* ----------------------- Treatments ------------------------ */
 .treatments {
   border-top: 1px solid rgba(167, 167, 167, 0.253);
