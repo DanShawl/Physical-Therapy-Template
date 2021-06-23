@@ -1,3 +1,23 @@
+/* ------------------- Swiper ---------------------- */
+var swiper = new Swiper('.mySwiper', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
+var swiper2 = new Swiper('.mySwiper2', {
+  slidesPerView: 1.5,
+  spaceBetween: 30,
+  centeredSlides: true,
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   clickable: true,
+  // },
+});
 /* ----------------------- Expand Menu ------------------------ */
 const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId);

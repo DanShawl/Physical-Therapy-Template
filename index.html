@@ -8,6 +8,10 @@
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/styles/styles.css" />
     <title>Rise Physical Therapy</title>
   </head>
@@ -101,30 +105,145 @@
             We work side by side with leading orthopedic doctors to guide our
             clients’ rehabilitation.
           </p>
-          <div class="home-image"></div>
-          <a href="#" class="button home-btn">Call Today</a>
+          <a href="#" class="button home-cta">Call Today</a>
+        </div>
+        <div class="home-grid">
+          <img
+            src="/images/outdoors.jpg"
+            alt=""
+            class="home-grid-image g1 fade-in-image"
+          />
+          <img
+            src="/images/soccer.jpg"
+            alt=""
+            class="home-grid-image g2 fade-in-image"
+          />
+          <img
+            src="/images/Grandfather.jpg"
+            alt=""
+            class="home-grid-image g3 fade-in-image"
+          />
+          <img
+            src="/images/hiking3.jpg"
+            alt=""
+            class="home-grid-image g4 fade-in-image"
+          />
+        </div>
+        <!-- <div class="home-image"></div> -->
+        <a href="#" class="button home-btn">Call Today</a>
+      </div>
+    </section>
+    <!----------------------- Services --------------------------->
+    <!-- PT, Sports Rehab, Workers Comp Rehab, Massage Therapy, Fitness-->
+
+    <section class="services">
+      <div class="services-container">
+        <h2 class="services-title">Services we provide</h2>
+        <div class="swiper-container2 mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide2">
+              <img src="/images/ptbpa.jpg" alt="" />
+              <h6 class="service-title">Physical Therapy</h6>
+              <p class="service-info">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum,
+                repellat!
+              </p>
+            </div>
+            <div class="swiper-slide swiper-slide2">
+              <img src="/images/platesquat.jpg" alt="" />
+              <h6 class="service-title">Fitness</h6>
+              <p class="service-info">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum,
+                repellat!
+              </p>
+            </div>
+            <div class="swiper-slide swiper-slide2">
+              <img src="/images/massage.jpg" alt="" />
+              <h6 class="service-title">Massage Therapy</h6>
+              <p class="service-info">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum,
+                repellat!
+              </p>
+            </div>
+            <div class="swiper-slide swiper-slide2">
+              <img src="/images/battleropes.jpg" alt="" />
+              <h6 class="service-title">Sports Rehabilitation</h6>
+              <p class="service-info">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum,
+                repellat!
+              </p>
+            </div>
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
         </div>
       </div>
     </section>
+
     <!----------------------- Social Proof 1 --------------------------->
 
     <section class="social-proof-1" id="social-proof-1">
       <div class="social-proof-container">
         <div class="social-proof-data margin-width">
-          <h2 class="social-proof-title">
+          <!-- <h2 class="social-proof-title">
             Trusted by world renowned orthopedic doctors.
-          </h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias,
-            sint asperiores? Ad dolores soluta temporibus obcaecati eveniet,
-            numquam, iusto officiis id assumenda necessitatibus aspernatur
-            laboriosam nostrum, corrupti minus esse sequi.
-          </p>
+          </h2> -->
+          <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <p class="quote">
+                  "Rise is my go-to physical therapy for my high-demand
+                  patients."
+                </p>
+                <p class="testimonial-name">Dr. David Rubenstein</p>
+                <p class="testimonial-occupation">
+                  NATIONALLY RECOGNIZED SPORTS MEDICINE SURGEON; LANKENAU
+                  HOSPITAL; PHYSICIAN FOR SEVERAL PROFESSIONAL SPORTS TEAMS
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <p class="quote">
+                  "I trust Rise and his excellent team of physical therapists
+                  because they consistently deliver expert care to my patients.
+                  They are simply fantastic!"
+                </p>
+                <p class="testimonial-name">Dr. Christopher Dodson</p>
+                <p class="testimonial-occupation">
+                  SPORTS MEDICINE SURGEON AT THE ROTHMAN INSTITUTE; PHYSICIAN
+                  FOR SEVERAL PROFESSIONAL SPORTS TEAMS
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <p class="quote">
+                  "Rise is the place to go to get the job done. They are masters
+                  of making people better than they were before an injury. They
+                  are at the top of their game."
+                </p>
+                <p class="testimonial-name">Dr. Alex Vaccaro</p>
+                <p class="testimonial-occupation">
+                  PRESIDENT, ROTHMAN INSTITUTE; INTERNATIONALLY RECOGNIZED SPINE
+                  SURGEON
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <p class="quote">
+                  "Rise is the place to go to get the job done. They are masters
+                  of making people better than they were before an injury. They
+                  are at the top of their game."
+                </p>
+                <p class="testimonial-name">Dr. Alex Vaccaro</p>
+                <p class="testimonial-occupation">
+                  PRESIDENT, ROTHMAN INSTITUTE; INTERNATIONALLY RECOGNIZED SPINE
+                  SURGEON
+                </p>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!----------------------- Services --------------------------->
+    <!----------------------- Treatments --------------------------->
     <section class="treatments">
       <div class="treatments-container">
         <h2>What we treat</h2>
@@ -160,7 +279,7 @@
             <img
               src="https://img.icons8.com/ios/50/000000/back-extensors.png"
             />
-            <p class="treatment-title">Total Back</p>
+            <p class="treatment-title">Total Back and Spine</p>
             <p class="treatment-info">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla.
             </p>
@@ -174,35 +293,13 @@
             </p>
           </div>
         </div>
+        <a href="#" class="button treatment-btn">Learn More</a>
       </div>
     </section>
 
-    <section class="grid-test">
-      <img src="/images/Grandfather.jpg" alt="" class="g g1" />
-      <img
-        src="/images/jeffrey-f-lin-6k0VD3xNw6U-unsplash.jpg"
-        alt=""
-        class="g g2"
-      />
-      <img
-        src="/images/jake-melara-Yh6K2eTr_FY-unsplash.jpg"
-        alt=""
-        class="g g3"
-      />
-
-      <!-- <img
-        src="/images/jeffrey-f-lin-6k0VD3xNw6U-unsplash.jpg"
-        alt=""
-        class="g g2"
-      />
-      <img src="/images/Grandfather.jpg" alt="" class="g g1" />
-
-      <img
-        src="/images/jake-melara-Yh6K2eTr_FY-unsplash.jpg"
-        alt=""
-        class="g g3"
-      /> -->
-    </section>
+    <!----------------------- Why Choose Us --------------------------->
+    <!-- safety, convenience, one-on-one care, quality care at affordable options, proven outcomes-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="/main.js"></script>
   </body>
