@@ -467,9 +467,8 @@ section {
   // background-color: #ffc65d;
   // background-color: #a6d39a;
   // background-color: #b7ddad;
-  i {
-  }
 }
+
 .star-rating {
   margin-top: 1rem;
   display: flex;
@@ -575,6 +574,53 @@ section {
   text-align: left;
 }
 
+@media screen and (min-width: 768px) {
+  .home-container {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: flex;
+  }
+  .home-grid {
+    width: 50%;
+    margin-left: 3rem;
+  }
+  .home-btn {
+    visibility: hidden;
+  }
+  .social-proof-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-proof-data {
+    // margin: 0 auto;
+    max-width: 500px;
+  }
+  .testimonial-occupation {
+    max-width: 300px;
+  }
+  .services-title,
+  .services-subtitle {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    max-width: 450px;
+  }
+  .swiper-container2 {
+    // background: #000;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  // .swiper-slide2 {
+  //   width: 100px;
+  // }
+  .virtual-sessions {
+    margin: 0 auto;
+    width: 75%;
+    // height: 100px;
+    border-radius: 1.5rem;
+  }
+}
+
 /* ----------------------- Social Proof ------------------------ */
 .social-proof-1 {
   h2 {
@@ -638,7 +684,7 @@ section {
 
 .quote {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 1.5rem;
   font-style: oblique;
 }
@@ -710,14 +756,20 @@ section {
   background-color: $text-color;
 }
 /* ----------------------- FAQ ------------------------ */
+.faq-title {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
 .accordion {
   margin: 0 1.5rem;
   border-bottom: 1px solid rgba(167, 167, 167, 0.253);
   padding-bottom: 1rem;
 }
+
 .accordion-button {
   font-family: $title-font;
-  font-weight: 600;
+  font-weight: 700;
+  // font-size: 15px;
   display: block;
   width: 100%;
   padding: 1rem 0;

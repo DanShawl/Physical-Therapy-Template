@@ -434,6 +434,55 @@ section {
   text-align: left;
 }
 
+@media screen and (min-width: 768px) {
+  .home-container {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .home-grid {
+    width: 50%;
+    margin-left: 3rem;
+  }
+  .home-btn {
+    visibility: hidden;
+  }
+  .social-proof-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .social-proof-data {
+    max-width: 500px;
+  }
+  .testimonial-occupation {
+    max-width: 300px;
+  }
+  .services-title,
+  .services-subtitle {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    max-width: 450px;
+  }
+  .swiper-container2 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .virtual-sessions {
+    margin: 0 auto;
+    width: 75%;
+    border-radius: 1.5rem;
+  }
+}
+
 /* ----------------------- Social Proof ------------------------ */
 .social-proof-1 {
   background-color: #ff985318;
@@ -494,7 +543,7 @@ section {
 
 .quote {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 1.5rem;
   font-style: oblique;
 }
@@ -569,6 +618,11 @@ section {
 }
 
 /* ----------------------- FAQ ------------------------ */
+.faq-title {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 .accordion {
   margin: 0 1.5rem;
   border-bottom: 1px solid rgba(167, 167, 167, 0.253);
@@ -577,7 +631,7 @@ section {
 
 .accordion-button {
   font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   display: block;
   width: 100%;
   padding: 1rem 0;
