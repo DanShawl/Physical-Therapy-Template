@@ -97,3 +97,17 @@ observerCTA.observe(homeCTA);
 //   const showBtn = document.getElementById('cta-btn')
 //   if(this.scrollY)
 // }
+
+document.querySelectorAll('.accordion-button').forEach((button) => {
+  button.addEventListener('click', () => {
+    const accoridonContent = button.nextElementSibling;
+
+    button.classList.toggle('accordion-button-active');
+
+    if (button.classList.contains('accordion-button-active')) {
+      accoridonContent.style.maxHeight = accoridonContent.scrollHeight + 'px';
+    } else {
+      accoridonContent.style.maxHeight = 0;
+    }
+  });
+});
