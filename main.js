@@ -13,6 +13,12 @@ var swiper2 = new Swiper('.mySwiper2', {
   slidesPerView: 1.5,
   spaceBetween: 30,
   centeredSlides: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 4,
+      centeredSlides: false,
+    },
+  },
   // pagination: {
   //   el: '.swiper-pagination',
   //   clickable: true,
