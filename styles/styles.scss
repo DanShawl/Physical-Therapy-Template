@@ -574,53 +574,6 @@ section {
   text-align: left;
 }
 
-@media screen and (min-width: 768px) {
-  .home-container {
-    margin-left: 3rem;
-    margin-right: 3rem;
-    display: flex;
-  }
-  .home-grid {
-    width: 50%;
-    margin-left: 3rem;
-  }
-  .home-btn {
-    visibility: hidden;
-  }
-  .social-proof-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .social-proof-data {
-    // margin: 0 auto;
-    max-width: 500px;
-  }
-  .testimonial-occupation {
-    max-width: 300px;
-  }
-  .services-title,
-  .services-subtitle {
-    margin-left: 3rem;
-    margin-right: 3rem;
-    max-width: 450px;
-  }
-  .swiper-container2 {
-    // background: #000;
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-  // .swiper-slide2 {
-  //   width: 100px;
-  // }
-  .virtual-sessions {
-    margin: 0 auto;
-    width: 75%;
-    // height: 100px;
-    border-radius: 1.5rem;
-  }
-}
-
 /* ----------------------- Social Proof ------------------------ */
 .social-proof-1 {
   h2 {
@@ -721,6 +674,15 @@ section {
   p {
     color: $body-color;
   }
+  .virtual-btn {
+    // width: 50%;
+    margin-top: 1.5rem;
+    color: $btn-font-color;
+    text-align: center;
+    width: 150px;
+    // background: #fff;
+    background: $btn-color;
+  }
 }
 // .virtual-btn {
 //   width: inherit;
@@ -756,6 +718,98 @@ section {
   background-color: $text-color;
 }
 /* ----------------------- FAQ ------------------------ */
+@media screen and (min-width: 768px) {
+  .home-container {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    display: flex;
+  }
+  .home-grid {
+    width: 50%;
+    margin-left: 3rem;
+  }
+  .home-btn {
+    visibility: hidden;
+  }
+  .social-proof-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-proof-data {
+    // margin: 0 auto;
+    max-width: 500px;
+  }
+  .testimonial-occupation {
+    max-width: 300px;
+  }
+  .services-title,
+  .services-subtitle {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    max-width: 450px;
+  }
+  .swiper-container2 {
+    // background: #000;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  // .swiper-slide2 {
+  //   height: 500px;
+  //   width: 500px;
+  // }
+  // .swiper-slide2 img {
+  //   max-height: 300px;
+  // }
+
+  .virtual-sessions {
+    margin: 0 4rem;
+    // width: 75%;
+    // height: 100px;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    .virtual-container {
+      max-width: 400px;
+      padding: 2rem;
+    }
+  }
+  .treatments {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .treatments-container {
+    // margin-left: 2rem;
+    // margin-right: 2rem;
+  }
+  .treatment-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    // display: flex;
+    // flex-wrap: wrap;
+    // gap: 5rem;
+  }
+  .treatment-card {
+    // margin-right: 3rem;
+    // width: 40%;
+  }
+  .faq {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    display: flex;
+    .faq-title {
+      width: 70%;
+      margin: 0;
+      margin-right: 2rem;
+    }
+  }
+  .footer-container {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
 .faq-title {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
