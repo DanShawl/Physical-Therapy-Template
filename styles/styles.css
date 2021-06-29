@@ -316,6 +316,10 @@ section {
   color: #fff;
 }
 
+.home-cta:hover {
+  background: #ff98539c;
+}
+
 .star-rating {
   margin-top: 1rem;
   display: -webkit-box;
@@ -402,6 +406,10 @@ section {
   z-index: 10;
   background-color: #ff9853;
   color: #fff;
+}
+
+.home-btn:hover {
+  background: #ff98539c;
 }
 
 /* ----------------------- Services ------------------------ */
@@ -549,6 +557,10 @@ section {
   background: #ff9853;
 }
 
+.virtual-sessions .virtual-btn:hover {
+  background: #ff98539c;
+}
+
 /* ----------------------- Treatments ------------------------ */
 .treatments {
   border-top: 1px solid rgba(167, 167, 167, 0.253);
@@ -577,7 +589,7 @@ section {
 }
 
 /* ----------------------- FAQ ------------------------ */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
   .home-container {
     margin-left: 4rem;
     margin-right: 4rem;
@@ -659,9 +671,31 @@ section {
     margin: 0;
     margin-right: 2rem;
   }
+  .footer {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
   .footer-container {
     margin-left: 4rem;
     margin-right: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .footer-links {
+    display: -ms-grid;
+    display: grid;
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -725,16 +759,20 @@ footer a {
 }
 
 .footer-title {
-  margin-left: -25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: -25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
 }
 
 .footer-title h2 {
@@ -747,6 +785,12 @@ footer a {
 
 .footer-title img {
   width: 75px;
+}
+
+.rise-info,
+.footer-info {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .rise-info {

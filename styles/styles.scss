@@ -20,6 +20,7 @@
 $header-height: 3.75rem;
 
 $btn-color: #ff9853;
+$btn-hover-color: #ff98539c;
 // $btn-color: #ff9e5d;
 $btn-font-color: #fff;
 $primary-color: #e8f9fa;
@@ -468,6 +469,9 @@ section {
   // background-color: #a6d39a;
   // background-color: #b7ddad;
 }
+.home-cta:hover {
+  background: $btn-hover-color;
+}
 
 .star-rating {
   margin-top: 1rem;
@@ -547,6 +551,10 @@ section {
   // background-color: #b7ddad;
   background-color: $btn-color;
   color: $btn-font-color;
+}
+
+.home-btn:hover {
+  background: $btn-hover-color;
 }
 
 /* ----------------------- Services ------------------------ */
@@ -683,6 +691,9 @@ section {
     // background: #fff;
     background: $btn-color;
   }
+  .virtual-btn:hover {
+    background: $btn-hover-color;
+  }
 }
 // .virtual-btn {
 //   width: inherit;
@@ -718,7 +729,8 @@ section {
   background-color: $text-color;
 }
 /* ----------------------- FAQ ------------------------ */
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 700px) {
   .home-container {
     margin-left: 4rem;
     margin-right: 4rem;
@@ -805,9 +817,22 @@ section {
       margin-right: 2rem;
     }
   }
+  .footer {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
   .footer-container {
     margin-left: 4rem;
     margin-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .footer-links {
+    display: grid;
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .faq-title {
@@ -871,10 +896,13 @@ footer {
 }
 
 .footer-title {
-  margin-left: -25px;
   display: flex;
-  justify-content: left;
-  align-items: center;
+  flex-direction: column;
+
+  margin-left: -25px;
+
+  justify-content: center;
+  align-items: left;
   h2 {
     margin-bottom: 0;
   }
@@ -884,6 +912,11 @@ footer {
   img {
     width: 75px;
   }
+}
+.rise-info,
+.footer-info {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 .rise-info {
   margin-top: 1.5rem;

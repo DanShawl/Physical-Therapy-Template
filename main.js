@@ -24,6 +24,7 @@ var swiper2 = new Swiper('.mySwiper2', {
   //   clickable: true,
   // },
 });
+
 /* ----------------------- Expand Menu ------------------------ */
 const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId);
@@ -38,6 +39,7 @@ const showMenu = (toggleId, navId) => {
     });
   }
 };
+
 showMenu('header-toggle-id', 'nav-menu');
 
 /* ------------------- Active + Remove Menu ---------------------- */
