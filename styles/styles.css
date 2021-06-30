@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Lato:wght@300;400;700;900&family=Marck+Script&family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@300;400;600;700;900&family=Tangerine:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@400;700&display=swap");
 /* ---------------------------- Variables ----------------------------*/
 /* --------------------- Font and Typography ---------------------- */
 /* ---------------------------- Base ----------------------------*/
@@ -35,11 +36,11 @@ ul {
 
 h1 {
   font-weight: 750;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #292929;
   font-weight: 700;
   margin-bottom: 2rem;
@@ -83,7 +84,7 @@ section {
 }
 
 .bd-grid {
-  max-width: 1024px;
+  max-width: 1350px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100%;
@@ -161,7 +162,7 @@ section {
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
   .nav {
     position: fixed;
     top: 0;
@@ -187,6 +188,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 90vh;
 }
 
 .nav-profile {
@@ -252,6 +254,26 @@ section {
   color: #292929;
 }
 
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-btn {
+  background-color: #ff9853;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
 .nav-socials {
   margin-top: 1em;
 }
@@ -279,6 +301,10 @@ section {
 
 .home h6 {
   margin-bottom: -0.75rem;
+}
+
+.home h5 {
+  font-family: "Raleway", sans-serif;
 }
 
 .home-container {
@@ -317,7 +343,7 @@ section {
 }
 
 .home-cta:hover {
-  background: #ff98539c;
+  background: #d86e27;
 }
 
 .star-rating {
@@ -409,7 +435,7 @@ section {
 }
 
 .home-btn:hover {
-  background: #ff98539c;
+  background: #d86e27;
 }
 
 /* ----------------------- Services ------------------------ */
@@ -444,6 +470,7 @@ section {
 
 /* ----------------------- Social Proof ------------------------ */
 .social-proof-1 {
+  padding: 2rem 0;
   background-color: #ff985318;
 }
 
@@ -467,7 +494,7 @@ section {
   text-align: center;
   color: #292929;
   font-size: 18px;
-  height: 225px;
+  height: 200px;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -502,9 +529,13 @@ section {
 
 .quote {
   font-size: 15px;
-  font-weight: 600;
   margin-bottom: 1.5rem;
   font-style: oblique;
+}
+
+.quote-name {
+  font-style: normal;
+  font-weight: 600;
 }
 
 .testimonial-name {
@@ -558,7 +589,7 @@ section {
 }
 
 .virtual-sessions .virtual-btn:hover {
-  background: #ff98539c;
+  background: #d86e27;
 }
 
 /* ----------------------- Treatments ------------------------ */
@@ -589,116 +620,6 @@ section {
 }
 
 /* ----------------------- FAQ ------------------------ */
-@media screen and (min-width: 700px) {
-  .home-container {
-    margin-left: 4rem;
-    margin-right: 4rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .home-grid {
-    width: 50%;
-    margin-left: 3rem;
-  }
-  .home-btn {
-    visibility: hidden;
-  }
-  .social-proof-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .social-proof-data {
-    max-width: 500px;
-  }
-  .testimonial-occupation {
-    max-width: 300px;
-  }
-  .services-title,
-  .services-subtitle {
-    margin-left: 4rem;
-    margin-right: 4rem;
-    max-width: 450px;
-  }
-  .swiper-container2 {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-  .virtual-sessions {
-    margin: 0 4rem;
-    border-radius: 1.5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .virtual-sessions .virtual-container {
-    max-width: 400px;
-    padding: 2rem;
-  }
-  .treatments {
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-  .treatment-group {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-  .faq {
-    margin-left: 4rem;
-    margin-right: 4rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .faq .faq-title {
-    width: 70%;
-    margin: 0;
-    margin-right: 2rem;
-  }
-  .footer {
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-  .footer-container {
-    margin-left: 4rem;
-    margin-right: 4rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-  }
-  .footer-links {
-    display: -ms-grid;
-    display: grid;
-    margin-top: 1.5rem;
-    gap: 1.5rem;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-  }
-}
-
 .faq-title {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -850,12 +771,14 @@ footer a {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
   body {
     margin: 0;
   }
   .header {
     height: calc($header-height + 1rem);
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   .header-logo,
   .nav-logo,
@@ -866,14 +789,17 @@ footer a {
   .nav {
     width: 100%;
   }
+  .nav-menu a {
+    font-size: 0.7rem;
+  }
   .nav-content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -910,17 +836,180 @@ footer a {
     margin: 0 1.2rem;
   }
   .nav-link {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
     color: #3a3a3a;
   }
   .nav-link:hover {
     color: #e8f9fa;
   }
   .active {
-    color: #e8f9fa;
+    color: #3a3a3a;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .nav-content {
+    height: 3.75rem;
+  }
+  .home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home-container {
+    max-width: 1350px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .home-grid {
+    width: 50%;
+    margin-left: 3rem;
+  }
+  .home-btn {
+    visibility: hidden;
+  }
+  .social-proof-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .social-proof-data {
+    max-width: 500px;
+  }
+  .testimonial-occupation {
+    max-width: 300px;
+  }
+  .services-title,
+  .services-subtitle {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    max-width: 450px;
+  }
+  .swiper-container2 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .virtual-sessions {
+    margin: 0 4rem;
+    border-radius: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .virtual-sessions .virtual-container {
+    max-width: 400px;
+    padding: 2rem;
+  }
+  .treatments {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .treatment-group {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .faq {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .faq .faq-title {
+    width: 70%;
+    margin: 0;
+    margin-right: 2rem;
+  }
+  .footer {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .footer-container {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .footer-links {
+    display: -ms-grid;
+    display: grid;
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .nav-menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .contact-btn {
+    width: 100px;
+    border: 1px solid #292929;
+    background-color: transparent;
+    color: #292929;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+  .home-data {
+    min-width: 600px;
+  }
+  .home-grid {
+    max-width: 500px;
+  }
+  .home-title {
+    font-size: 5rem;
+    max-width: 600px;
+  }
+  .home-cta {
+    font-size: 1.25rem;
+  }
   .bd-grid {
     margin-left: auto;
     margin-right: auto;
@@ -931,6 +1020,42 @@ footer a {
   .nav-content span {
     margin-left: 0.5em;
     font-size: 1rem;
+  }
+  .services-title,
+  .services-subtitle {
+    max-width: 1148px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-container2 {
+    max-width: 1148px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .swiper-slide2 {
+    max-width: 400px;
+  }
+  .virtual-sessions {
+    max-width: 1148px;
+    margin: auto;
+  }
+  .virtual-container h2 {
+    width: 700px;
+  }
+  .treatments-container {
+    max-width: 1148px;
+    margin: 0 auto;
+  }
+  .treatment-group {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .treatment-card {
+    margin-right: 2.5rem;
+  }
+  .faq {
+    max-width: 1148px;
+    margin: 0 auto;
   }
 }
 

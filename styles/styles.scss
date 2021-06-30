@@ -1,10 +1,6 @@
-// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
-
-// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Lato:wght@300;400;700;900&family=Marck+Script&family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@300;400;600;700;900&family=Tangerine:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@400;700&display=swap');
 
 // font-family: 'Charm', cursive;
 // font-family: 'Lato', sans-serif;
@@ -15,12 +11,13 @@
 // font-family: 'Raleway', sans-serif;
 // font-family: 'Source Sans Pro', sans-serif;
 // font-family: 'Tangerine', cursive;
+// font-family: 'Andika New Basic', sans-serif;
 
 /* ---------------------------- Variables ----------------------------*/
 $header-height: 3.75rem;
 
 $btn-color: #ff9853;
-$btn-hover-color: #ff98539c;
+$btn-hover-color: #d86e27;
 // $btn-color: #ff9e5d;
 $btn-font-color: #fff;
 $primary-color: #e8f9fa;
@@ -114,12 +111,12 @@ ul {
 }
 h1 {
   font-weight: 750;
-  font-family: 'Raleway', sans-serif;
+  font-family: $title-font;
   // font-family: 'Lato', sans-serif;
   // font-family: 'Open Sans', sans-serif;
 }
 h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: $title-font;
 
   color: $title-color;
   font-weight: 700;
@@ -163,7 +160,7 @@ section {
 }
 
 .bd-grid {
-  max-width: 1024px;
+  max-width: 1350px;
   display: grid;
   grid-template-columns: 100%;
   margin-left: 1.5rem;
@@ -320,7 +317,7 @@ section {
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
   .nav {
     position: fixed;
     top: 0;
@@ -340,6 +337,7 @@ section {
 .nav-content {
   display: flex;
   flex-direction: column;
+  height: 90vh;
 }
 
 .nav-profile {
@@ -389,6 +387,21 @@ section {
 .nav-link:hover {
   color: $title-color;
 }
+
+.nav-menu {
+  // height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-btn {
+  background-color: $btn-color;
+  // background-color: $white-color;
+  // border: 2px solid $title-color;
+  color: $btn-font-color;
+  width: 100%;
+  text-align: center;
+}
 .nav-socials {
   margin-top: 1em;
 }
@@ -416,6 +429,9 @@ section {
   padding-top: $header-height;
   h6 {
     margin-bottom: -0.75rem;
+  }
+  h5 {
+    font-family: $title-font;
   }
 }
 .home-container {
@@ -584,6 +600,7 @@ section {
 
 /* ----------------------- Social Proof ------------------------ */
 .social-proof-1 {
+  padding: 2rem 0;
   h2 {
     text-align: center;
     // font-family: 'Raleway', sans-serif;
@@ -608,7 +625,7 @@ section {
   color: $title-color;
   font-size: 18px;
   // background: #000;
-  height: 225px;
+  height: 200px;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -645,10 +662,16 @@ section {
 
 .quote {
   font-size: 15px;
-  font-weight: 600;
+  // font-weight: 600;
   margin-bottom: 1.5rem;
   font-style: oblique;
 }
+.quote-name {
+  font-style: normal;
+  font-weight: 600;
+  // font-size: 10rem;
+}
+
 .testimonial-name {
   font-weight: 700;
   font-family: 'Raleway', sans-serif;
@@ -656,6 +679,7 @@ section {
 .testimonial-occupation {
   // color: #78aa6b;
   font-size: 10px;
+  // margin-bottom: 5rem;
   margin-bottom: 1.5rem;
 }
 
@@ -730,111 +754,6 @@ section {
 }
 /* ----------------------- FAQ ------------------------ */
 
-@media screen and (min-width: 700px) {
-  .home-container {
-    margin-left: 4rem;
-    margin-right: 4rem;
-    display: flex;
-  }
-  .home-grid {
-    width: 50%;
-    margin-left: 3rem;
-  }
-  .home-btn {
-    visibility: hidden;
-  }
-  .social-proof-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .social-proof-data {
-    // margin: 0 auto;
-    max-width: 500px;
-  }
-  .testimonial-occupation {
-    max-width: 300px;
-  }
-  .services-title,
-  .services-subtitle {
-    margin-left: 4rem;
-    margin-right: 4rem;
-    max-width: 450px;
-  }
-  .swiper-container2 {
-    // background: #000;
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-  // .swiper-slide2 {
-  //   height: 500px;
-  //   width: 500px;
-  // }
-  // .swiper-slide2 img {
-  //   max-height: 300px;
-  // }
-
-  .virtual-sessions {
-    margin: 0 4rem;
-    // width: 75%;
-    // height: 100px;
-    border-radius: 1.5rem;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    .virtual-container {
-      max-width: 400px;
-      padding: 2rem;
-    }
-  }
-  .treatments {
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-  .treatments-container {
-    // margin-left: 2rem;
-    // margin-right: 2rem;
-  }
-  .treatment-group {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    // display: flex;
-    // flex-wrap: wrap;
-    // gap: 5rem;
-  }
-  .treatment-card {
-    // margin-right: 3rem;
-    // width: 40%;
-  }
-  .faq {
-    margin-left: 4rem;
-    margin-right: 4rem;
-    display: flex;
-    .faq-title {
-      width: 70%;
-      margin: 0;
-      margin-right: 2rem;
-    }
-  }
-  .footer {
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-  .footer-container {
-    margin-left: 4rem;
-    margin-right: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-  }
-  .footer-links {
-    display: grid;
-    margin-top: 1.5rem;
-    gap: 1.5rem;
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
 .faq-title {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -971,12 +890,13 @@ footer {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
   body {
     margin: 0;
   }
   .header {
     height: calc($header-height + 1rem);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   .header-logo,
   .nav-logo,
@@ -987,9 +907,12 @@ footer {
   .nav {
     width: 100%;
   }
+  .nav-menu a {
+    font-size: 0.7rem;
+  }
   .nav-content {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
   }
   .nav-profile {
@@ -1018,13 +941,15 @@ footer {
     margin: 0 1.2rem;
   }
   .nav-link {
+    font-family: $title-font;
+    font-weight: 700;
     color: $text-color;
   }
   .nav-link:hover {
     color: $primary-color;
   }
   .active {
-    color: $primary-color;
+    color: $text-color;
   }
   // .nav-socials {
   //   display: flex;
@@ -1034,7 +959,156 @@ footer {
   // }
 }
 
+@media screen and (min-width: 700px) {
+  header {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .nav-content {
+    height: $header-height;
+  }
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 100vw;
+  }
+  .home-container {
+    max-width: 1350px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    display: flex;
+    // width: 100%;
+  }
+  .home-grid {
+    width: 50%;
+    margin-left: 3rem;
+  }
+  .home-btn {
+    visibility: hidden;
+  }
+  .social-proof-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-proof-data {
+    // margin: 0 auto;
+    max-width: 500px;
+  }
+  .testimonial-occupation {
+    max-width: 300px;
+  }
+  .services-title,
+  .services-subtitle {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    max-width: 450px;
+  }
+  .swiper-container2 {
+    // background: #000;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  // .swiper-slide2 {
+  //   height: 500px;
+  //   width: 500px;
+  // }
+  // .swiper-slide2 img {
+  //   max-height: 300px;
+  // }
+
+  .virtual-sessions {
+    margin: 0 4rem;
+    // width: 75%;
+    // height: 100px;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    .virtual-container {
+      max-width: 400px;
+      padding: 2rem;
+    }
+  }
+  .treatments {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .treatments-container {
+    // margin-left: 2rem;
+    // margin-right: 2rem;
+  }
+  .treatment-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    // display: flex;
+    // flex-wrap: wrap;
+    // gap: 5rem;
+  }
+  .treatment-card {
+    // margin-right: 3rem;
+    // width: 40%;
+  }
+  .faq {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    display: flex;
+    .faq-title {
+      width: 70%;
+      margin: 0;
+      margin-right: 2rem;
+    }
+  }
+  .footer {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .footer-container {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .footer-links {
+    display: grid;
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .nav-menu {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .contact-btn {
+    width: 100px;
+    border: 1px solid $title-color;
+    background-color: transparent;
+
+    color: $title-color;
+  }
+}
+
 @media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+  .home-data {
+    min-width: 600px;
+  }
+  .home-grid {
+    max-width: 500px;
+  }
+  .home-title {
+    font-size: 5rem;
+    max-width: 600px;
+  }
+  .home-cta {
+    font-size: 1.25rem;
+  }
   .bd-grid {
     margin-left: auto;
     margin-right: auto;
@@ -1045,6 +1119,46 @@ footer {
   .nav-content span {
     margin-left: 0.5em;
     font-size: 1rem;
+  }
+
+  .services-title,
+  .services-subtitle {
+    max-width: 1148px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-container2 {
+    max-width: 1148px;
+    margin: 0 auto;
+    padding: 0;
+    // padding-left: 14rem;
+    // padding-right: 4rem;
+  }
+  .swiper-slide2 {
+    max-width: 400px;
+  }
+  .virtual-sessions {
+    max-width: 1148px;
+    margin: auto;
+  }
+  .virtual-container {
+    h2 {
+      width: 700px;
+    }
+  }
+  .treatments-container {
+    max-width: 1148px;
+    margin: 0 auto;
+  }
+  .treatment-group {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .treatment-card {
+    margin-right: 2.5rem;
+  }
+  .faq {
+    max-width: 1148px;
+    margin: 0 auto;
   }
 }
 
