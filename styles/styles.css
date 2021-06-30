@@ -995,6 +995,9 @@ footer a {
 }
 
 @media screen and (min-width: 1024px) {
+  .home {
+    margin-top: 3rem;
+  }
   h2 {
     font-size: 2.5rem;
   }
