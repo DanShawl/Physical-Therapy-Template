@@ -603,9 +603,10 @@ section {
   padding: 2rem 0;
   h2 {
     text-align: center;
+    margin-bottom: 0;
     // font-family: 'Raleway', sans-serif;
   }
-  background-color: #ff985318;
+  // background-color: #ff985318;
   // background-color: #f5f5f5;
 }
 .social-proof-data {
@@ -669,11 +670,13 @@ section {
 .quote-name {
   font-style: normal;
   font-weight: 600;
+  // font-size: 15px;
   // font-size: 10rem;
 }
 
 .testimonial-name {
   font-weight: 700;
+  font-size: 15px;
   font-family: 'Raleway', sans-serif;
 }
 .testimonial-occupation {
@@ -1105,6 +1108,9 @@ footer {
   .home-title {
     font-size: 5rem;
     max-width: 600px;
+    span {
+      font-size: 6rem;
+    }
   }
   .home-cta {
     font-size: 1.25rem;
@@ -1120,7 +1126,27 @@ footer {
     margin-left: 0.5em;
     font-size: 1rem;
   }
-
+  .quote {
+    font-size: 18px;
+    max-width: 650px;
+  }
+  .social-proof-1 {
+    margin: 5rem auto 2rem;
+    background-color: $body-color;
+    h2 {
+      max-width: 600px;
+      margin: 1rem auto;
+    }
+  }
+  .social-proof-data {
+    max-width: 900px;
+  }
+  .swiper-container {
+    height: 250px;
+  }
+  .services {
+    margin: 2rem 0 5rem;
+  }
   .services-title,
   .services-subtitle {
     max-width: 1148px;
@@ -1139,7 +1165,7 @@ footer {
   }
   .virtual-sessions {
     max-width: 1148px;
-    margin: auto;
+    margin: 5rem auto;
   }
   .virtual-container {
     h2 {

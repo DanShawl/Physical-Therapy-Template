@@ -471,11 +471,11 @@ section {
 /* ----------------------- Social Proof ------------------------ */
 .social-proof-1 {
   padding: 2rem 0;
-  background-color: #ff985318;
 }
 
 .social-proof-1 h2 {
   text-align: center;
+  margin-bottom: 0;
 }
 
 .social-proof-data {
@@ -540,6 +540,7 @@ section {
 
 .testimonial-name {
   font-weight: 700;
+  font-size: 15px;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -1007,6 +1008,9 @@ footer a {
     font-size: 5rem;
     max-width: 600px;
   }
+  .home-title span {
+    font-size: 6rem;
+  }
   .home-cta {
     font-size: 1.25rem;
   }
@@ -1020,6 +1024,27 @@ footer a {
   .nav-content span {
     margin-left: 0.5em;
     font-size: 1rem;
+  }
+  .quote {
+    font-size: 18px;
+    max-width: 650px;
+  }
+  .social-proof-1 {
+    margin: 5rem auto 2rem;
+    background-color: #fbfefd;
+  }
+  .social-proof-1 h2 {
+    max-width: 600px;
+    margin: 1rem auto;
+  }
+  .social-proof-data {
+    max-width: 900px;
+  }
+  .swiper-container {
+    height: 250px;
+  }
+  .services {
+    margin: 2rem 0 5rem;
   }
   .services-title,
   .services-subtitle {
@@ -1037,7 +1062,7 @@ footer a {
   }
   .virtual-sessions {
     max-width: 1148px;
-    margin: auto;
+    margin: 5rem auto;
   }
   .virtual-container h2 {
     width: 700px;
